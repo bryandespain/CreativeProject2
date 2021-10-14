@@ -1,6 +1,6 @@
-document.getElementById("weatherSubmit").addEventListener("click", function(event) {
+document.getElementById("playerSubmit").addEventListener("click", function(event) {
   event.preventDefault();
-  const value = document.getElementById("weatherInput").value;
+  const value = document.getElementById("playerInput").value;
   if (value === "")
     return;
   console.log(value);
@@ -37,7 +37,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
         results += `<td>${json.data[i].team.conference}</td></tr>`;
       }
       results += '</tbody></table>'
-      document.getElementById("weatherResults").innerHTML = results;
+      document.getElementById("playerResults").innerHTML = results;
     })
 
 });
